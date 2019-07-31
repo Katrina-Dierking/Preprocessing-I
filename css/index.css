@@ -134,17 +134,79 @@ html,
 body {
   height: 100%;
 }
+h1 {
+  font-size: 35px;
+  color: solid black;
+  font-weight: 900;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+    color: solid black;
+    font-weight: 900;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+}
+h2 {
+  font-size: 20px;
+  padding-bottom: 1%;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1%;
+  }
+}
+h3 {
+  font-size: 18px;
+  font-weight: 900;
+  padding-bottom: 3%;
+}
+h4 {
+  display: flex;
+  flex: stretch;
+  padding: 1%;
+  background-color: lightgrey;
+}
+h5 {
+  display: flex;
+  flex: stretch;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  h3,
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
+}
 .container {
   width: 900px;
   margin: auto;
   border: 1px solid black;
 }
-header nav {
+@media (max-width: 500px) {
+  .container {
+    margin: 0% 3% 0% 5%;
+    border: none;
+    align-content: center;
+  }
+}
+nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-header nav a {
+nav a {
   text-decoration: none;
   color: black;
   padding: 3%;
@@ -157,6 +219,14 @@ header nav a {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .top {
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: #f0e3e3;
+    justify-content: center;
+  }
+}
 .Code {
   width: 80%;
   height: 5%;
@@ -165,21 +235,27 @@ header nav a {
   border: 1.5px dotted #2d5f82;
   box-shadow: 8px 8px 4px #bac5cf;
 }
-h1 {
-  font-size: 35px;
-  color: solid black;
-  font-weight: 900;
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
-}
-h2 {
-  font-size: 20px;
-  padding-bottom: 1%;
+@media (max-width: 500px) {
+  .Code {
+    width: 50%;
+    height: 5%;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 1.5px dotted #2d5f82;
+    box-shadow: 8px 8px 4px #bac5cf;
+  }
 }
 .para-block {
   width: 0 auto;
   padding: 5%;
   border-top: 2px dotted lightgray;
+}
+@media (max-width: 500px) {
+  .para-block {
+    width: 0 auto;
+    padding: 5%;
+    border-top: 4px dotted lightgray;
+  }
 }
 .button {
   width: 20%;
@@ -221,11 +297,6 @@ h2 {
   border: 0.5px solid black;
   margin: 1.5%;
 }
-h3 {
-  font-size: 18px;
-  font-weight: 900;
-  padding-bottom: 3%;
-}
 .button2 {
   width: 28%;
   margin-top: 3%;
@@ -243,17 +314,6 @@ h3 {
   background: rgba(0, 0, 0, 0);
   box-shadow: inset 0 0 0 1px #f0e3e3;
 }
-h4 {
-  display: flex;
-  flex: stretch;
-  padding: 1%;
-  background-color: lightgrey;
-}
-h5 {
-  display: flex;
-  flex: stretch;
-  padding: 1%;
-}
 .parent-work-history {
   width: 0 auto;
   padding: 5%;
@@ -268,12 +328,7 @@ h5 {
   border-top: 2px dotted darkgray;
 }
 @media (max-width: 500px) {
-  .container {
-    margin: 0% 3% 0% 5%;
-    border: none;
-    align-content: center;
-  }
-  header nav {
+  nav {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -282,40 +337,10 @@ h5 {
     color: darkgray;
     font-size: 20px;
   }
-  header nav a {
-    font-size: 1.5rem;
-    color: darkgray;
-    padding: 1%;
-  }
-  .top {
-    min-width: 100%;
-    margin: 0 auto;
-    background-color: #f0e3e3;
-    justify-content: center;
-  }
-  .Code {
-    width: 50%;
-    height: 5%;
+  a {
+    text-decoration: none;
+    color: black;
     padding: 3%;
-    margin-bottom: 2%;
-    border: 1.5px dotted #2d5f82;
-    box-shadow: 8px 8px 4px #bac5cf;
-  }
-  h1 {
-    font-size: 2.5rem;
-    color: solid black;
-    font-weight: 900;
-    padding-top: 1.5%;
-    padding-bottom: 1.5%;
-  }
-  h2 {
-    font-size: 2rem;
-    padding-bottom: 1%;
-  }
-  .para-block {
-    width: 0 auto;
-    padding: 5%;
-    border-top: 4px dotted lightgray;
   }
   .middle {
     min-width: 100%;
@@ -336,14 +361,5 @@ h5 {
     background-color: white;
     border: 0.5px solid black;
     margin: 1.5%;
-  }
-  h3,
-  h4,
-  h5 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 1.5rem;
-    letter-spacing: 0.1em;
   }
 }
