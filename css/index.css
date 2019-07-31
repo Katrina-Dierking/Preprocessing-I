@@ -136,7 +136,7 @@ body {
 }
 .container {
   width: 900px;
-  margin: 0 auto;
+  margin: auto;
   border: 1px solid black;
 }
 header nav {
@@ -150,9 +150,7 @@ header nav a {
   padding: 3%;
 }
 .top {
-  margin-right: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
+  margin: 0% 5% 5% 5%;
   background-color: #f0e3e3;
   padding: 3%;
   display: flex;
@@ -262,4 +260,90 @@ h5 {
 }
 .parent-work-history .history {
   padding-top: 3%;
+}
+.contact {
+  width: 100%;
+  background-color: #f0e3e3;
+  padding: 5%;
+  border-top: 2px dotted darkgray;
+}
+@media (max-width: 500px) {
+  .container {
+    margin: 0% 3% 0% 5%;
+    border: none;
+    align-content: center;
+  }
+  header nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+  }
+  header nav a {
+    font-size: 1.5rem;
+    color: darkgray;
+    padding: 1%;
+  }
+  .top {
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: #f0e3e3;
+    justify-content: center;
+  }
+  .Code {
+    width: 50%;
+    height: 5%;
+    padding: 3%;
+    margin-bottom: 2%;
+    border: 1.5px dotted #2d5f82;
+    box-shadow: 8px 8px 4px #bac5cf;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: solid black;
+    font-weight: 900;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 1%;
+  }
+  .para-block {
+    width: 0 auto;
+    padding: 5%;
+    border-top: 4px dotted lightgray;
+  }
+  .middle {
+    min-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    background-color: #2d5f82;
+    border-top: 5px solid black;
+  }
+  .middle .middle-left {
+    width: 55%;
+    border: 0.5px solid white;
+    background: transparent;
+    margin: 3%;
+  }
+  .middle .middle-right {
+    width: 45%;
+    background-color: white;
+    border: 0.5px solid black;
+    margin: 1.5%;
+  }
+  h3,
+  h4,
+  h5 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+  }
 }
