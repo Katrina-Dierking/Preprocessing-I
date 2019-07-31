@@ -57,7 +57,7 @@ html, body {
     height: 100%;
 }
 
-// Header styles 
+// Heading styles 
 h1 {
 	font-size:35px;
 	color:solid black;
@@ -116,7 +116,12 @@ h5 {
 		}
 	}
 	
-// 	End header styles 
+// 	End heading styles 
+
+//Variables
+
+@calypso:#2d5f82;
+@Heather:#bac5cf;
 
 .container {
 	width: 900px;
@@ -166,16 +171,16 @@ nav {
 				height:5%;
 				padding: 3%;
 				margin-bottom:2%;
-				border: 1.5px dotted #2d5f82;
-				box-shadow: 8px 8px 4px #bac5cf;
+				border: 1.5px dotted @calypso;
+				box-shadow: 8px 8px 4px @Heather;
 
 					@media (max-width:500px){
 						width:50%;
 						height:5%;
 						padding: 3%;
 						margin-bottom:2%;
-						border: 1.5px dotted #2d5f82;
-						box-shadow: 8px 8px 4px #bac5cf;
+						border: 1.5px dotted @calypso;
+						box-shadow: 8px 8px 4px @Heather;
 					}
 			}
 	
@@ -196,7 +201,7 @@ nav {
 	width:20%;
 	margin-left:40%;
 	display:inline-block;
-	background:#2d5f82;
+	background:@calypso;
 	padding:2% 4%;
 	border: .5px solid black;
 	border-radius:5%;
@@ -219,7 +224,7 @@ nav {
 	width:0 auto;
 	display:flex;
 	flex-direction:row;
-	background-color:#2d5f82; 
+	background-color:@calypso; 
 	border-top:30px solid black;
 }
 
@@ -325,7 +330,7 @@ nav {
 		margin-top:3%;
 		display:flex;
 		flex-direction:row;
-		background-color:#2d5f82; 
+		background-color:@calypso; 
 		border-top: 5px solid black;
 	}
 	
