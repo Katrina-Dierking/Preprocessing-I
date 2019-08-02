@@ -168,13 +168,13 @@ h3 {
 h4 {
   display: flex;
   flex: stretch;
-  padding: 1%;
+  padding: 1% 1% 1% 0%;
   background-color: lightgrey;
 }
 h5 {
   display: flex;
   flex: stretch;
-  padding: 1%;
+  padding: 1% 1% 1% 0%;
 }
 @media (max-width: 500px) {
   h3,
@@ -188,6 +188,10 @@ h5 {
     font-size: 1.5rem;
     letter-spacing: 0.1em;
   }
+}
+.bordered {
+  border: 1.5px dotted #2d5f82;
+  box-shadow: 8px 8px 4px #bac5cf;
 }
 .container {
   width: 900px;
@@ -205,6 +209,17 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  nav {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: darkgray;
+    font-size: 20px;
+  }
 }
 nav a {
   text-decoration: none;
@@ -249,6 +264,8 @@ nav a {
   width: 0 auto;
   padding: 5%;
   border-top: 2px dotted lightgray;
+  display: flex;
+  align-content: center;
 }
 @media (max-width: 500px) {
   .para-block {
@@ -277,11 +294,21 @@ nav a {
   box-shadow: inset 0 0 0 3px #3a7999;
 }
 .middle {
-  width: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   background-color: #2d5f82;
-  border-top: 30px solid black;
+  border: 5px solid black;
+}
+@media (max-width: 500px) {
+  .middle {
+    min-width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    background-color: #2d5f82;
+    border: 3px solid black;
+  }
 }
 .middle .middle-left {
   width: 55%;
@@ -290,12 +317,28 @@ nav a {
   background: transparent;
   margin: 3%;
 }
+@media (max-width: 500px) {
+  .middle .middle-left {
+    width: 55%;
+    border: 0.5px solid white;
+    background: transparent;
+    margin: 3%;
+  }
+}
 .middle .middle-right {
   width: 45%;
   padding: 3%;
   background-color: white;
   border: 0.5px solid black;
   margin: 1.5%;
+}
+@media (max-width: 500px) {
+  .middle .middle-right {
+    width: 45%;
+    background-color: white;
+    border: 0.5px solid black;
+    margin: 1.5%;
+  }
 }
 .button2 {
   width: 28%;
@@ -322,44 +365,9 @@ nav a {
   padding-top: 3%;
 }
 .contact {
-  width: 100%;
+  max-width: 700px;
+  margin-bottom: 5%;
   background-color: #f0e3e3;
-  padding: 5%;
-  border-top: 2px dotted darkgray;
-}
-@media (max-width: 500px) {
-  nav {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: darkgray;
-    font-size: 20px;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-    padding: 3%;
-  }
-  .middle {
-    min-width: 100%;
-    margin-top: 3%;
-    display: flex;
-    flex-direction: row;
-    background-color: #2d5f82;
-    border-top: 5px solid black;
-  }
-  .middle .middle-left {
-    width: 55%;
-    border: 0.5px solid white;
-    background: transparent;
-    margin: 3%;
-  }
-  .middle .middle-right {
-    width: 45%;
-    background-color: white;
-    border: 0.5px solid black;
-    margin: 1.5%;
-  }
+  border-top: 4px dotted darkgray;
+  text-align: left;
 }
